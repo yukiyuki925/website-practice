@@ -236,7 +236,7 @@ footer p img {
 
 /* メニューアイコン（三本線）の真ん中の線です */
 .gMenu .menu-icon .navicon {
-  background: #ffc107;
+  background: #333333;
   /* 色は自由に変更可能です */
   display: block;
   height: 2px;
@@ -251,7 +251,7 @@ footer p img {
 /* メニューアイコン（三本線）の上と下の線を疑似要素で追加 */
 .gMenu .menu-icon .navicon::before,
 .gMenu .menu-icon .navicon::after {
-  background: #ffc107;
+  background: #333333;
   /* 色は自由に変更可能です */
   content: '';
   display: block;
