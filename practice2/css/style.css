@@ -140,6 +140,7 @@ a {
 .menu-detail {
   background-color: #FFFFFF;
   display: flex;
+  justify-content: center;
 }
 
 
