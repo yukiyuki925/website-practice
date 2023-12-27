@@ -1,0 +1,698 @@
+@charset "utf-8";
+
+body {
+  font-family: 'Noto Sans JP',
+    sans-serif;
+}
+
+
+header {
+  background: url(../images/interior-view-hotel-restaurant.jpg) no-repeat center center/cover;
+  height: 830px;
+}
+
+h1 {
+  font-size: 44px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-bottom: 70px;
+}
+
+h1 span {
+  font-family: 'EB Garamond', serif;
+  letter-spacing: 0.05em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-wrapper {
+  padding: 0 4%;
+}
+
+.header-image {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 35px;
+}
+
+.logo1 {
+  max-width: 201px;
+  height: 100px;
+}
+
+.logo2 {
+  max-width: 61px;
+  height: 61px;
+}
+
+.logo2-2 {
+  max-width: 61px;
+  height: 61px;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.header-sentence {
+  margin-top: 460px;
+}
+
+.header-wrapper p:nth-of-type(1) {
+  background-color: #fff;
+  text-align: center;
+  font-size: 28px;
+  padding: 18px 27px 19px 26px;
+  max-width: 420px;
+  /* height: 65px; */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.header-wrapper p:nth-of-type(2) {
+  background-color: #fff;
+  text-align: center;
+  font-size: 28px;
+  padding: 18px 27px 19px 26px;
+  max-width: 302px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.concept {
+  max-width: 1125px;
+  margin: 80px auto 120px;
+}
+
+/* .concept h1 span {
+  font-family: 'EB Garamond', serif;
+  letter-spacing: 0.05em;
+} */
+
+/* .concept h1 {
+  text-align: center;
+  font-size: 44px;
+  letter-spacing: 0.05em;
+} */
+
+.concept img {
+  max-width: 650px;
+  height: 450px;
+}
+
+.concept-wrapper {
+  display: flex;
+  margin: 60px 30px 30px;
+  justify-content: space-between;
+}
+
+.concept-text {
+  margin: 122px 20px 96px;
+}
+
+.concept-text p:nth-of-type(1) {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.concept-text p:nth-of-type(2) {
+  max-width: 380px;
+  font-size: 14px;
+}
+
+.middleVisual {
+  background: url(../images/hearty-highcalorie-breakfast-delicious-mouthwatering-bruschetta-with-fried-eggs-herbs-breakfast-with-cup-aromatic-coffee.jpg) no-repeat center center/cover;
+  height: 380px;
+}
+
+.menu {
+  background-color: #F4F4F4;
+  padding: 80px 30px;
+}
+
+.menu-wrapper {
+  max-width: 1125px;
+  margin: 0 auto;
+}
+
+.menu-detail {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+}
+
+
+.menu-detail:nth-of-type(2) {
+  margin-top: 40px;
+}
+
+.menu-sentence {
+  margin: 162px 40px 180px;
+}
+
+.food {
+  font-size: 26px;
+  font-family: 'EB Garamond', serif;
+  margin-bottom: 20px;
+  letter-spacing: 0.07em;
+}
+
+.menu-sentence p:nth-of-type(2) {
+  font-size: 14px;
+  max-width: 300px;
+  margin-bottom: 30px;
+  line-height: 1.7em;
+  font-weight: lighter;
+}
+
+.chocolate-croissants {
+  width: 100%;
+  height: 432px;
+  margin: 40px;
+}
+
+.view {
+  display: flex;
+  align-items: center;
+}
+
+.view img {
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.view a {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #605e5e;
+  font-family: 'EB Garamond', serif;
+  opacity: 0.5;
+}
+
+.news {
+  background-color: #fff;
+  padding: 80px 0 100px;
+}
+
+.news-wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.news-contents {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  max-width: 100%;
+  gap: 10px;
+  padding: 0 20px;
+}
+
+.new-tag {
+  display: inline-block;
+  background-color: #211D1A;
+  font-family: 'EB Garamond', serif;
+  color: #fff;
+  padding: 22px 14px 21px 15px;
+  border-radius: 100%;
+  font-size: 14px;
+  position: absolute;
+  left: 0px;
+  top: -20px;
+}
+
+.news-contents p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.news-contents article img {
+  margin: 0 auto 10px;
+  max-width: 100%;
+  height: 245px;
+}
+
+.date {
+  font-size: 14px;
+  color: #929292;
+}
+
+.info {
+  font-family: 'EB Garamond', serif;
+  text-align: center;
+  font-size: 12px;
+  display: inline-block;
+  margin-left: 6px;
+  border: 1px solid #262626;
+  padding: 2px 7px;
+  width: 47px;
+}
+
+.news .button {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.news .button button {
+  font-family: 'EB Garamond', serif;
+  font-size: 14px;
+  background-color: #262626;
+  color: #fff;
+  height: 65px;
+  padding: 24px 161px;
+  border: none;
+  text-align: center;
+  position: relative;
+}
+
+.news button::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: 31px;
+  right: 40px;
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(-45deg);
+}
+
+.shop {
+  background-color: #F4F4F4;
+  padding: 80px 0 100px;
+}
+
+.shop-wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+
+.shop dl {
+  width: 735px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  border-top: 1px solid rgba(210, 210, 210)
+}
+
+.shop dt {
+  width: 30%;
+  padding: 20px 30px;
+  border-bottom: 1px solid rgba(210, 210, 210);
+  font-size: 14px;
+  font-family: 'EB Garamond', serif;
+}
+
+.shop dd {
+  width: 70%;
+  padding: 20px 30px;
+  border-bottom: 1px solid rgba(210, 210, 210);
+  font-size: 14px;
+}
+
+.contact {
+  background: url(../images/close-up-barista-making-cappuccino-bartender-preparing-coffee-drink.jpg) no-repeat center center/cover;
+  height: 622px;
+  max-width: 100%;
+  /* text-align: center; */
+  position: relative;
+}
+
+.contact-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: #fff;
+  width: 735px;
+  height: 422px;
+}
+
+.contact h1 {
+  margin-top: 60px
+}
+
+.contact p {
+  text-align: center;
+  width: 398px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #262626;
+}
+
+.contact .button {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.contact .button button {
+  font-family: 'EB Garamond', serif;
+  font-size: 14px;
+  background-color: #262626;
+  color: #fff;
+  height: 65px;
+  padding: 24px 130px;
+  border: none;
+  text-align: center;
+  position: relative;
+}
+
+.contact button::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: 31px;
+  left: 370px;
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(-45deg);
+}
+
+.footer-wrapper {
+  max-width: 100%;
+  margin: 70px 0 40px;
+}
+
+footer img {
+  display: block;
+  width: 250px;
+  height: 125px;
+  margin: 0 auto 30px;
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 446px;
+  margin: 0 auto 80px;
+}
+
+footer nav ul li {
+  list-style: none;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: #262626;
+  font-family: 'EB Garamond', serif;
+}
+
+footer hr {
+  color: #DCDCDC;
+  opacity: 0.5;
+}
+
+footer p {
+  margin: 49px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media screen and (max-width:920px) {
+
+  header {
+    background: url(../images/interior-view-hotel-restaurant.jpg) no-repeat center center/cover;
+    height: 486px;
+  }
+
+  h1 {
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin-bottom: 30px;
+  }
+
+  .header-wrapper p:nth-of-type(1) {
+    font-size: 20px;
+    padding: 14px 16px;
+    width: 295px;
+  }
+
+  .header-wrapper p:nth-of-type(2) {
+    font-size: 20px;
+    padding: 14px 18px;
+    width: 210px;
+  }
+
+  .header-image {
+    padding-top: 16px;
+  }
+
+  .logo1 {
+    max-width: 100px;
+    height: 50px;
+  }
+
+  .logo2 {
+    max-width: 40px;
+    height: 40px;
+  }
+
+  .logo2-2 {
+    max-width: 40px;
+    height: 40px;
+  }
+
+  .header-sentence {
+    margin-top: 250px;
+  }
+
+  .concept {
+    margin: 40px auto 60px;
+  }
+
+  .concept-wrapper {
+    display: block;
+    margin-top: 30px;
+    max-width: 319px;
+    margin: 0 auto;
+  }
+
+  .concept img {
+    max-width: 319px;
+    height: 221px;
+  }
+
+  .concept-text {
+    margin: 30px 0;
+  }
+
+  .concept-text p:nth-of-type(1) {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .concept-text p:nth-of-type(2) {
+    max-width: 320px;
+    font-size: 14px;
+    line-height: 1.5rem;
+    opacity: 0.7;
+  }
+
+  .middleVisual {
+    background: url(../images/hearty-highcalorie-breakfast-delicious-mouthwatering-bruschetta-with-fried-eggs-herbs-breakfast-with-cup-aromatic-coffee.jpg) no-repeat center center/cover;
+    height: 104px;
+  }
+
+  .menu {
+    background-color: #F4F4F4;
+    padding: 40px 0;
+  }
+
+  .menu-wrapper {
+    max-width: 338px;
+    margin: 0 auto;
+  }
+
+  .menu-detail {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu-detail:nth-of-type(2) {
+    flex-direction: column-reverse;
+  }
+
+  .menu-sentence {
+    margin: 20px;
+  }
+
+  .food {
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .chocolate-croissants {
+    max-width: 319px;
+    height: 220px;
+    margin: 10px;
+  }
+
+  .view {
+    display: flex;
+    align-items: center;
+    padding: 10px 0 40px;
+  }
+
+  .news {
+    padding: 40px 0 100px;
+  }
+
+  .new-tag {
+    left: -20px;
+    top: -20px;
+  }
+
+  .news-wrapper {
+    max-width: 334px;
+    margin: 0 auto;
+  }
+
+  .news-contents {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 0;
+  }
+
+  .news-contents article img {
+    margin: 0 auto 10px;
+    max-width: 334px;
+    height: 221px;
+  }
+
+  .news .button button {
+    width: 319px;
+    padding: 24px 113px;
+  }
+
+  .news .button::after {
+    top: 0px;
+    right: 0px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+  }
+
+  .shop {
+    padding: 40px 0 60px;
+  }
+
+  .shop-wrapper {
+    max-width: 375px;
+    margin: 0 auto;
+  }
+
+  .shop dl {
+    width: 356px;
+    flex-direction: column;
+  }
+
+  .shop dt {
+    width: 100%;
+    padding: 10px 10px 0px 10px;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+  }
+
+  .shop dd {
+    width: 100%;
+    padding: 0 10px 10px 10px;
+    font-size: 12px;
+  }
+
+  .contact {
+    background: none;
+    background-color: #211D1A;
+    height: 503px;
+  }
+
+  .shadow {
+    background: url(../images/close-up-barista-making-cappuccino-bartender-preparing-coffee-drink.jpg) no-repeat center center/cover;
+    height: 171px;
+    max-width: 100%;
+  }
+
+  .contact-wrapper {
+    max-width: 350px;
+    height: 320px;
+    top: 160px;
+    bottom: 18px;
+  }
+
+  .contact .button button {
+    width: 298px;
+    padding: 25px 72px 24px 73px;
+  }
+
+  .contact h1 {
+    margin: 35px 0px 15px;
+  }
+
+  .contact p {
+    width: 210px;
+    line-height: 1.5;
+    opacity: 0.7;
+  }
+
+  .contact .button {
+    margin-top: 30px;
+  }
+
+  .contact button::after {
+    left: 270px;
+  }
+
+  footer img {
+    width: 150px;
+    height: 75px;
+  }
+
+  footer nav ul {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  footer nav ul li {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 921px) and (max-width: 1087px) {
+
+  .chocolate-croissants {
+    width: 50%;
+    height: 80%;
+  }
+
+  .concept img {
+    width: 60%;
+  }
+
+  .menu-sentence {
+    margin: 110px 20px 90px;
+  }
+
+  .news img {
+    height: 90%;
+  }
+}
