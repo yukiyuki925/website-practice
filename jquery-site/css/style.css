@@ -266,10 +266,14 @@ header button {
   position: relative;
 }
 
-.trainer-img {
+.trainer-img-wrapper {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
+}
+
+.trainer-img {
+  padding: 0 10px 0 15px;
 }
 
 .trainer-img img {
