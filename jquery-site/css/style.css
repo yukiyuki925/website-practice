@@ -220,6 +220,7 @@ header button {
 /* trainer */
 .trainer {
   background-color: #00B21B;
+  padding: 30px 0;
 }
 
 .trainer-wrapper {
@@ -227,8 +228,6 @@ header button {
   width: 1110px;
   margin: 0 auto;
 }
-
-
 
 .trainer h1 {
   font-size: 64px;
@@ -239,11 +238,11 @@ header button {
 .trainer h1::after {
   content: "";
   display: block;
-  width: 54px;
-  height: 1px;
+  width: 600px;
+  height: 2px;
   background-color: #FFFFFF;
   position: absolute;
-  top: 0px;
+  top: 165px;
 }
 
 .small {
@@ -265,4 +264,34 @@ header button {
 
 .studio p:nth-of-type(1) {
   position: relative;
+}
+
+.trainer-img {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trainer-img img {
+  width: 360px;
+  height: 350px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.img-text {
+  background-color: #FFFFFF;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.img-textDetail {
+  width: 360px;
+  height: 113px;
+  background-color: #FFFFFF;
+  padding-top: 2px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.img-textDetail p {
+  padding: 20px 20px 27px 20px;
+  font-weight: lighter;
 }
