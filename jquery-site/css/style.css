@@ -282,7 +282,6 @@ header button {
 
 .trainer-img-wrapper {
   display: flex;
-  /* justify-content: space-between; */
   width: 1110px;
   margin: 40px auto 0;
 }
@@ -341,4 +340,84 @@ header button {
 
 .studio-img img {
   height: 670px;
+}
+
+/* price */
+
+.price {
+  padding: 30px 0;
+  background-color: #00B21B;
+}
+
+.price-wrapper {
+  max-width: 1110px;
+  margin: 30px auto;
+}
+
+.price h1 {
+  font-size: 64px;
+  color: #FFFFFF;
+}
+
+.price-price {
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.price-flex {
+  margin-top: 20px;
+}
+
+.flex-box {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  width: 350px;
+  height: 437px;
+  padding: 0 2%;
+  margin: 0 15px;
+
+}
+
+.title-detail {
+  font-size: 26px;
+  border: none;
+  padding-top: 16px;
+  text-align: center;
+  margin-bottom: 5px;
+  color: #00B21B;
+}
+
+.price-sub {
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.price-main {
+  text-align: center;
+  font-size: 48px;
+}
+
+dl {
+  width: 100%;
+}
+
+dd {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #D8D8D8;
+  padding-top: 19px;
+  margin-bottom: 9px;
+  font-size: 18px;
+}
+
+dt {
+  text-align: center;
+  padding-bottom: 16px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.price-flex {
+  display: flex;
 }
