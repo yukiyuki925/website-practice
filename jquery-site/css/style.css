@@ -460,3 +460,37 @@ header button {
   color: #00B21B;
   font-size: 20px;
 }
+
+/* counseling-img */
+
+.counseling-img {
+  background-color: #00B21B;
+}
+
+.counseling-img img {
+  max-width: 100%;
+  height: 370px;
+}
+
+/* free-counseling */
+.free-counseling {
+  background-color: #00B21B;
+  max-width: 100%;
+  height: 279px;
+}
+
+.counseling-button {
+  max-width: 100%;
+  text-align: center;
+}
+
+.counseling-button button {
+  width: 360px;
+  height: 80px;
+  margin-top: 100px;
+  border-radius: 100px;
+  border: none;
+  color: #00B21B;
+  font-weight: bold;
+  cursor: pointer;
+}
