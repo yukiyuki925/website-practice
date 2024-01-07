@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Josefin Sans', sans-serif;
-  max-width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -109,7 +109,7 @@ header button {
 
 .about {
   margin: 100px auto 20px;
-  width: 100%;
+  max-width: 100%;
 }
 
 .about-MainText {
@@ -144,12 +144,12 @@ header button {
 }
 
 .about-PictureSentence img {
-  width: 950px;
+  max-width: 950px;
   height: 550px;
 }
 
 .about-PictureSentence2 img {
-  width: 950px;
+  max-width: 950px;
   height: 550px;
   margin: 0 0 0 auto;
   z-index: -1;
@@ -294,16 +294,17 @@ header button {
 
 .trainer-img-wrapper {
   display: flex;
-  width: 1110px;
+  max-width: 1110px;
   margin: 40px auto 0;
 }
 
 .trainer-img {
   padding-right: 10px;
+  max-width: 370px;
 }
 
 .trainer-img img {
-  width: 360px;
+  max-width: 360px;
   height: 350px;
   border-radius: 10px 10px 0px 0px;
 }
@@ -314,7 +315,7 @@ header button {
 }
 
 .img-textDetail {
-  width: 360px;
+  max-width: 360px;
   height: 113px;
   background-color: #FFFFFF;
   padding-top: 2px;
@@ -458,13 +459,22 @@ header button {
 .faq dt {
   max-width: 100%;
   padding: 14px 0;
-  margin-left: 2px;
   border-bottom: 1px solid #D8D8D8;
+}
+
+.faq dt a {
+  text-decoration: none;
+  color: #111111;
+}
+
+.js-accordion-title.border {
+  border: none;
 }
 
 .faq dd {
   max-width: 100%;
   padding: 14px 0;
+  margin-left: 2px;
   border-bottom: 1px solid #D8D8D8;
 }
 
@@ -472,6 +482,30 @@ header button {
   color: #00B21B;
   font-size: 20px;
 }
+
+.accordion-text {
+  display: none;
+}
+
+.accordion-title {
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion-title:after {
+  position: absolute;
+  display: block;
+  content: '';
+  top: 35%;
+  right: 22px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #00B21B;
+  border-right: 2px solid #00B21B;
+  transform: rotate(135deg);
+  transition: all .3s ease-in-out;
+}
+
 
 /* counseling-img */
 

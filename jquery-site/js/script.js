@@ -11,3 +11,13 @@ $(function () {
     });
   });
 });
+
+// アコーディオン
+$(function () {
+  /*タイトルをクリックすると*/
+  $(".js-accordion-title").on("click", function () {
+    $(this).toggleClass("border");
+    $(this).next().slideToggle(200);
+    $(this).toggleClass("open", 200);
+  });
+});
