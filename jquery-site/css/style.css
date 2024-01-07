@@ -2,18 +2,22 @@
 
 body {
   font-family: 'Josefin Sans', sans-serif;
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 /* header */
 
 header {
-  background: url(../Images/mv-1.jpg) no-repeat right;
+  background-image: url(../Images/mv-1.jpg);
   height: 680px;
-  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   position: relative;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-origin: border-box;
+  z-index: 1;
 }
 
 header h1 {
@@ -148,6 +152,7 @@ header button {
   width: 950px;
   height: 550px;
   margin: 0 0 0 auto;
+  z-index: -1;
 }
 
 .about-PictureDetail {
@@ -212,14 +217,21 @@ header button {
 }
 
 /* middle-img */
+
 .middle-img {
-  width: 100%;
+  background-color: #00B21B;
+}
+
+.middle-img img {
+  max-width: 100%;
   height: 96px;
+  background-color: #FFFFFF;
 }
 
 /* middle-img2 */
-.middle-img2 {
-  width: 100%;
+
+.middle-img2 img {
+  max-width: 100%;
   height: 96px;
   transform: scale(-1, -1);
 }
@@ -530,4 +542,19 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #FFFFFF;
+}
+
+/* jquery */
+
+.js-fade {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px);
+  transition: opacity 1s, visibility 1s, transform 1s;
+}
+
+.scroll {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
 }
