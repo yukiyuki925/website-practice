@@ -14,10 +14,12 @@ $(function () {
 
 // アコーディオン
 $(function () {
-  /*タイトルをクリックすると*/
   $(".js-accordion-title").on("click", function () {
+    $(".js-accordion-title").not(this).removeClass("open");
+    $(".js-accordion-title").not(this).removeClass("border");
+    $(".js-accordion-title").not(this).next().slideUp(200);
+    $(this).toggleClass("open");
     $(this).toggleClass("border");
     $(this).next().slideToggle(200);
-    $(this).toggleClass("open", 200);
   });
 });
