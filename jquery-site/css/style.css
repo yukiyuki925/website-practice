@@ -331,6 +331,7 @@ header button {
 
 .studio {
   margin: 30px 0;
+  height: 850px;
 }
 
 .studio h1 {
@@ -351,8 +352,12 @@ header button {
   margin: 20px 0 40px;
 }
 
-.studio-img img {
-  height: 670px;
+#slide ul {
+  position: relative;
+}
+
+#slide li {
+  position: absolute;
 }
 
 /* price */
@@ -448,7 +453,7 @@ header button {
 
 .faq-wrapper {
   max-width: 1110px;
-  margin: 40px auto 50px;
+  margin: 40px auto 100px;
 }
 
 .faq dl {
