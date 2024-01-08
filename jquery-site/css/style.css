@@ -341,15 +341,13 @@ header button {
 .studio p {
   font-size: 20px;
   color: #00B21B;
+  margin-bottom: 30px;
 }
 
 .studio-wrapper {
   max-width: 1110px;
+  height: 850px;
   margin: 0 auto;
-}
-
-.studio-img {
-  margin: 20px 0 40px;
 }
 
 #slide ul {
@@ -358,6 +356,93 @@ header button {
 
 #slide li {
   position: absolute;
+  width: 100%;
+}
+
+#button {
+  margin-top: 620px;
+  z-index: 10;
+}
+
+#button ul {
+  display: flex;
+  justify-content: center;
+}
+
+#button ul li {
+  margin-right: 10px;
+}
+
+#button ul li a {
+  background-color: #EAEAEA;
+  text-decoration: none;
+  display: block;
+  text-indent: -9999px;
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+}
+
+#button .target {
+  background-color: #00B21B;
+}
+
+.click-button {
+  width: 79px;
+  height: 79px;
+  background-color: #FFFFFF;
+  z-index: 10;
+}
+
+#prevBtn {
+  width: 79px;
+  height: 79px;
+  background-color: #FFFFFF;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  top: 35%;
+  left: 1072px;
+  border-radius: 50%;
+}
+
+#prevBtn2 {
+  width: 79px;
+  height: 79px;
+  background-color: #FFFFFF;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  top: 35%;
+  left: -12%;
+  border-radius: 50%;
+}
+
+
+#prevBtn::before {
+  content: '';
+  width: 17px;
+  height: 17px;
+  border: 0;
+  border-top: solid 3px #00B21B;
+  border-right: solid 3px #00B21B;
+  position: absolute;
+  top: 43%;
+  left: 32%;
+  transform: rotate(45deg);
+}
+
+#prevBtn2::before {
+  content: '';
+  width: 17px;
+  height: 17px;
+  border: 0;
+  border-top: solid 3px #00B21B;
+  border-right: solid 3px #00B21B;
+  position: absolute;
+  top: 43%;
+  left: 48%;
+  transform: rotate(-137deg);
 }
 
 /* price */
