@@ -1,4 +1,4 @@
-// 写真 fade in
+// 写真fadeIn
 $(function () {
   $(window).scroll(function () {
     $(".js-fade").each(function () {
@@ -35,6 +35,7 @@ $(function () {
   $("#slide li:not(:first-child)").hide();
   timer = setInterval(slideTimer, interval);
 
+  // 次へボタンが押された時の処理
   function slideTimer() {
     $("#slide li:nth-child(" + current + ")").fadeOut(duration);
     $("#slide li:nth-child(" + next + ")").fadeIn(duration);
@@ -43,16 +44,39 @@ $(function () {
     if (next > count) {
       next = 1;
     }
-
     $("#button li a").removeClass("target");
     $("#button li:nth-child(" + current + ") a").addClass("target");
   }
 
+  // 戻るボタンが押された時の処理
+  function reSlideTimer() {
+    $("#slide li:nth-child(" + current + ")").fadeOut(duration);
+    current = current - 1 > 0 ? current - 1 : count;
+    $("#slide li:nth-child(" + current + ")").fadeIn(duration);
+    next = current + 1;
+    if (next > count) {
+      next = 1;
+    }
+    $("#button li a").removeClass("target");
+    $("#button li:nth-child(" + current + ") a").addClass("target");
+  }
+
+  // list a を押すと画像変遷
   $("#button li a").click(function () {
     next = $(this).html();
     clearInterval(timer);
     timer = setInterval(slideTimer, interval);
     slideTimer();
     return false;
+  });
+
+  // 次へボタン
+  $("#click-button #prevBtn").click(function () {
+    slideTimer();
+  });
+
+  // 戻るボタン
+  $("#click-button #prevBtn2").click(function () {
+    reSlideTimer();
   });
 });

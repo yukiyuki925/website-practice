@@ -404,6 +404,8 @@ header button {
   top: 35%;
   left: 1072px;
   border-radius: 50%;
+  border: none;
+  cursor: pointer;
 }
 
 #prevBtn2 {
@@ -414,10 +416,11 @@ header button {
   display: inline-block;
   text-decoration: none;
   top: 35%;
-  left: -12%;
+  left: -11%;
   border-radius: 50%;
+  border: none;
+  cursor: pointer;
 }
-
 
 #prevBtn::before {
   content: '';
@@ -427,8 +430,8 @@ header button {
   border-top: solid 3px #00B21B;
   border-right: solid 3px #00B21B;
   position: absolute;
-  top: 43%;
-  left: 32%;
+  top: 42%;
+  left: 33%;
   transform: rotate(45deg);
 }
 
@@ -440,9 +443,9 @@ header button {
   border-top: solid 3px #00B21B;
   border-right: solid 3px #00B21B;
   position: absolute;
-  top: 43%;
-  left: 48%;
-  transform: rotate(-137deg);
+  top: 42%;
+  left: 42%;
+  transform: rotate(-135deg);
 }
 
 /* price */
@@ -479,6 +482,10 @@ header button {
   padding: 0 2%;
   margin: 0 15px;
 
+}
+
+#click-button {
+  display: inline;
 }
 
 .title-detail {
