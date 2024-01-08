@@ -9,7 +9,6 @@ body {
 /* header */
 
 header {
-  background-image: url(../Images/mv-1.jpg);
   height: 680px;
   max-width: 100%;
   margin: 0 auto;
@@ -24,6 +23,11 @@ header h1 {
   font-size: 40px;
   font-family: Josefin Sans, bold;
   margin-left: 20px;
+}
+
+header nav {
+  position: absolute;
+  left: 550px;
 }
 
 header nav ul {
@@ -43,6 +47,11 @@ header nav ul li a {
 
 header span {
   color: #00B21B;
+}
+
+.header-wrapper {
+  z-index: -10;
+  text-align: right;
 }
 
 .enjoy {
@@ -72,9 +81,11 @@ header span {
 
 .header-nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding-top: 20px;
+  position: absolute;
+  top: 0;
+  max-width: 1440px;
 }
 
 .header-sentence {
@@ -688,4 +699,19 @@ nav ul li a {
   opacity: 1;
   visibility: visible;
   transform: translateY(0px);
+}
+
+@media screen and (max-width: 959px) {
+  header {
+    max-width: 900px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    max-width: 375px;
+    width: 100%;
+    background-position: right;
+  }
 }
