@@ -926,6 +926,7 @@ nav ul li a {
     z-index: -1;
   }
 
+  /* trainer */
   .training {
     font-size: 18px;
     margin-bottom: 15px;
@@ -1002,4 +1003,57 @@ nav ul li a {
     padding-right: 0px;
     max-width: 340px;
   }
+
+  /* studio */
+
+  .studio {
+    height: 330px;
+  }
+
+  .studio h1 {
+    font-size: 32px;
+  }
+
+  .studio p {
+    font-size: 14px;
+  }
+
+  #button {
+    margin-top: 190px;
+  }
+
+  #button ul li a {
+    width: 7px;
+    height: 7px;
+  }
+
+  #prevBtn {
+    top: 10%;
+    left: 94%;
+    width: 40px;
+    height: 40px;
+  }
+
+  #prevBtn::before {
+    width: 7px;
+    height: 7px;
+    border-top: solid 3px #EB51C2;
+    border-right: solid 3px #EB51C2;
+  }
+
+  #prevBtn2 {
+    top: 10%;
+    left: -17%;
+    width: 40px;
+    height: 40px;
+  }
+
+  #prevBtn2::before {
+    width: 7px;
+    height: 7px;
+    border-top: solid 3px #EB51C2;
+    border-right: solid 3px #EB51C2;
+  }
+
+
 }
