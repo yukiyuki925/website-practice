@@ -878,7 +878,7 @@ nav ul li a {
 
   /* about */
   .about {
-    margin: 70px auto;
+    margin: 70px auto 550px;
   }
 
   .AI {
@@ -938,11 +938,39 @@ nav ul li a {
     height: 55px;
   }
 
+  .train-sentence2 {
+    font-size: 22px;
+    width: 263px;
+    margin-bottom: 20px;
+    height: 55px;
+  }
+
   .about-PictureDetail p:nth-of-type(3) {
     width: 268px;
     height: 228px;
     font-size: 14px;
     text-align: left;
+  }
+
+  .about-PictureDetail2 p:nth-of-type(3) {
+    width: 268px;
+    height: 228px;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .min-button {
+    position: absolute;
+    background-color: #00B21B;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 50px;
+    border: none;
+    height: 53px;
+    margin: 360px 36px 0 42px;
+    width: 280px;
+    height: 45px;
+    font-size: 13px;
   }
 
 }
