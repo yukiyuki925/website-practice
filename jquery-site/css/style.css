@@ -3,6 +3,7 @@
 body {
   font-family: 'Josefin Sans', sans-serif;
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -26,16 +27,17 @@ header h1 {
 }
 
 header nav {
-  position: absolute;
-  left: 550px;
+  margin-left: 354px;
+  max-width: 100%;
 }
 
 header nav ul {
   display: flex;
+  flex-wrap: wrap;
 }
 
 header nav ul li {
-  margin-right: 32px;
+  margin-right: 24px;
   font-size: 28px;
   list-style: none;
 }
@@ -52,6 +54,14 @@ header span {
 .header-wrapper {
   z-index: -10;
   text-align: right;
+}
+
+.header-wrapper img {
+  border-radius: 0 0 0 90px;
+}
+
+.last-li {
+  margin-right: 0;
 }
 
 .enjoy {
@@ -85,7 +95,6 @@ header span {
   padding-top: 20px;
   position: absolute;
   top: 0;
-  max-width: 1440px;
 }
 
 .header-sentence {
@@ -250,15 +259,14 @@ header button {
 /* trainer */
 .trainer {
   background-color: #00B21B;
-  padding: 30px 0;
-  max-width: 100% margin
+  padding: 30px 0 30px 15px;
+  max-width: 100%
 }
 
 .trainer-wrapper {
   background-color: #00B21B;
-  max-width: 100%;
+  max-width: 1110px;
   margin: 0 auto;
-  padding: 0 4%;
 }
 
 .trainer h1 {
@@ -310,14 +318,17 @@ header button {
 }
 
 .trainer-img {
-  padding-right: 10px;
+  padding-right: 15px;
   max-width: 370px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .trainer-img img {
   max-width: 360px;
   height: 350px;
   border-radius: 10px 10px 0px 0px;
+  padding-right: 5px;
 }
 
 .img-text {
@@ -325,8 +336,13 @@ header button {
   border-radius: 10px 10px 10px 10px;
 }
 
+.img-text.js-fade {
+  max-width: 100%;
+}
+
 .img-textDetail {
   max-width: 360px;
+  width: 100%;
   height: 113px;
   background-color: #FFFFFF;
   padding-top: 2px;
@@ -334,6 +350,7 @@ header button {
 }
 
 .img-textDetail p {
+  max-width: 100%;
   padding: 20px 20px 27px 20px;
   font-weight: lighter;
 }
@@ -701,10 +718,67 @@ nav ul li a {
   transform: translateY(0px);
 }
 
+/* レスポンシブ */
+
+@media screen and (max-width: 1400px) {
+  header nav {
+    margin-left: 320px;
+  }
+
+  header nav ul li {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  header nav {
+    margin-left: 280px;
+  }
+
+  header nav ul li {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  header nav {
+    margin-left: 220px;
+  }
+
+  header nav ul li {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .trainer-img {
+    max-width: 340px;
+  }
+
+  .trainer img {
+    max-width: 330px;
+  }
+
+  .staff p {
+    margin-right: 15px;
+  }
+
+  .trainer h1::after {
+
+    width: 490px;
+  }
+}
+
 @media screen and (max-width: 959px) {
   header {
     max-width: 900px;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 1175px) {
+  header nav {
+    display: none;
   }
 }
 
