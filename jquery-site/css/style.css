@@ -973,4 +973,33 @@ nav ul li a {
     font-size: 13px;
   }
 
+  .trainer h1 {
+    font-size: 40px;
+  }
+
+  .trainer h1::after {
+    width: 165px;
+    top: 140px;
+    left: 20px;
+  }
+
+  .staff {
+    max-width: 350px;
+    justify-content: space-evenly;
+  }
+
+  .trainer-img-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .trainer-img {
+    padding-right: 0px;
+    margin-top: 15px;
+  }
+
+  .trainer-img img {
+    padding-right: 0px;
+    max-width: 340px;
+  }
 }
