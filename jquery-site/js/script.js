@@ -94,7 +94,7 @@ $(function () {
         500,
         function () {
           // アニメーションが完了したら呼び出されるコールバック関数
-          if (current === count) {
+          if (current === 3) {
             // 最後の要素に達したら最初の要素に戻す
             current = 1;
             $(".price-flex div").css("margin-left", "0"); // 全ての要素のmarginを初期化

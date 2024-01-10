@@ -647,13 +647,23 @@ header button {
 
 /* counseling-img */
 
-.counseling-img {
+.counseling-img1 {
   background-color: #00B21B;
 }
 
-.counseling-img img {
+.counseling-img1 img {
   max-width: 100%;
   height: 370px;
+}
+
+.counseling-img2 {
+  background-color: #00B21B;
+}
+
+.counseling-img2 img {
+  max-width: 100%;
+  height: 180px;
+  display: none;
 }
 
 /* free-counseling */
@@ -1073,5 +1083,40 @@ nav ul li a {
 
   .price-flex {
     padding-left: 15px;
+  }
+
+  /* counseling-img */
+
+  .free-counseling {
+    height: 147px;
+  }
+
+  .counseling-img1 img {
+    display: none;
+  }
+
+  .counseling-img2 img {
+    display: block;
+  }
+
+  .counseling-button button {
+    width: 300px;
+    height: 53px;
+    margin-top: 50px;
+  }
+
+  /* footer */
+
+  footer h1 {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .footer-wrapper {
+    padding: 20px 0;
   }
 }
