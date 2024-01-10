@@ -85,22 +85,27 @@ $(function () {
 $(function () {
   let count = $(".price-flex div").length;
   let current = 1;
-  let next = 2;
-  let duration = 700;
   w = $(window).width();
 
-  function Slide() {
+  function slideLeft() {
     if (w <= 480) {
       $(".price-flex div:nth-child(" + current + ")").animate(
         { "margin-left": "-280px" },
-        500
+        500,
+        function () {
+          // アニメーションが完了したら呼び出されるコールバック関数
+          if (current === count) {
+            // 最後の要素に達したら最初の要素に戻す
+            current = 1;
+            $(".price-flex div").css("margin-left", "0"); // 全ての要素のmarginを初期化
+          } else {
+            current++;
+          }
+        }
       );
-      // $(".price-flex div:nth-child(" + next + ")").fadeIn(duration);
-
-      if (next > count) {
-        next = 1;
-      }
     }
   }
-  Slide();
+
+  // 3秒ごとにslideLeft関数を実行
+  setInterval(slideLeft, 3000);
 });

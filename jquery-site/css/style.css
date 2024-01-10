@@ -1070,4 +1070,8 @@ nav ul li a {
   .flex-box {
     min-width: 290px;
   }
+
+  .price-flex {
+    padding-left: 15px;
+  }
 }
