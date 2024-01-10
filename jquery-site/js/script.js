@@ -35,7 +35,7 @@ $(function () {
   $("#slide li:not(:first-child)").hide();
   timer = setInterval(slideTimer, interval);
 
-  // 次へボタンが押された時の処理
+  // 次に進む処理
   function slideTimer() {
     $("#slide li:nth-child(" + current + ")").fadeOut(duration);
     $("#slide li:nth-child(" + next + ")").fadeIn(duration);
@@ -48,7 +48,7 @@ $(function () {
     $("#button li:nth-child(" + current + ") a").addClass("target");
   }
 
-  // 戻るボタンが押された時の処理
+  // 戻る処理
   function reSlideTimer() {
     $("#slide li:nth-child(" + current + ")").fadeOut(duration);
     current = current - 1 > 0 ? current - 1 : count;
@@ -79,4 +79,28 @@ $(function () {
   $("#click-button #prevBtn2").click(function () {
     reSlideTimer();
   });
+});
+
+// スライダー　sp price
+$(function () {
+  let count = $(".price-flex div").length;
+  let current = 1;
+  let next = 2;
+  let duration = 700;
+  w = $(window).width();
+
+  function Slide() {
+    if (w <= 480) {
+      $(".price-flex div:nth-child(" + current + ")").animate(
+        { "margin-left": "-280px" },
+        500
+      );
+      // $(".price-flex div:nth-child(" + next + ")").fadeIn(duration);
+
+      if (next > count) {
+        next = 1;
+      }
+    }
+  }
+  Slide();
 });

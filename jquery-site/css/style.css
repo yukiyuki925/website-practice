@@ -498,6 +498,7 @@ header button {
 .price-wrapper {
   max-width: 1110px;
   margin: 30px auto 40px;
+
 }
 
 .price h1 {
@@ -512,10 +513,6 @@ header button {
   padding: 0 2%;
 }
 
-.price-flex {
-  margin-top: 20px;
-}
-
 .flex-box {
   background-color: #FFFFFF;
   border-radius: 10px;
@@ -523,7 +520,6 @@ header button {
   height: 437px;
   padding: 0 2%;
   margin: 0 15px;
-
 }
 
 #click-button {
@@ -572,6 +568,8 @@ header button {
 
 .price-flex {
   display: flex;
+  width: 100%;
+  margin-top: 20px;
 }
 
 /* FAQ */
@@ -1055,5 +1053,21 @@ nav ul li a {
     border-right: solid 3px #EB51C2;
   }
 
+  /* price */
 
+  .price-wrapper {
+    margin: 30px auto 60px;
+  }
+
+  .price h1 {
+    font-size: 40px;
+  }
+
+  .price-price {
+    font-size: 14px;
+  }
+
+  .flex-box {
+    min-width: 290px;
+  }
 }
