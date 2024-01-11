@@ -277,7 +277,7 @@ header button {
 /* trainer */
 .trainer {
   background-color: #00B21B;
-  padding: 30px 0 30px 15px;
+  padding: 30px 15px;
   max-width: 100%
 }
 
@@ -290,21 +290,8 @@ header button {
 .trainer h1 {
   font-size: 64px;
   color: #FFFFFF;
-  position: relative;
   max-width: 1110px;
   margin: 0 auto;
-}
-
-.trainer h1::after {
-  content: "";
-  display: block;
-  width: 540px;
-  max-width: 100%;
-  height: 2px;
-  background-color: #FFFFFF;
-  position: absolute;
-  top: 170px;
-  left: 10px;
 }
 
 .small {
@@ -312,6 +299,19 @@ header button {
   color: #FFFFFF;
   max-width: 1110px;
   margin: 0 auto;
+  position: relative;
+}
+
+.small::after {
+  content: "";
+  display: block;
+  width: 520px;
+  max-width: 100%;
+  height: 2px;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 110px;
+  left: 3%;
 }
 
 .staff {
@@ -340,8 +340,8 @@ header button {
 
 .trainer-img {
   padding-right: 15px;
-  max-width: 370px;
-  width: 100%;
+  width: 370px;
+  max-width: 100%;
   box-sizing: border-box;
 }
 
@@ -816,10 +816,6 @@ nav ul li a {
     margin-right: 15px;
   }
 
-  .trainer h1::after {
-    width: 490px;
-  }
-
   .header-MainSentence {
     font-size: 70px;
   }
@@ -872,6 +868,10 @@ nav ul li a {
 @media screen and (max-width: 990px) {
   .nobody {
     top: 85%;
+  }
+
+  .small::after {
+    width: 430px;
   }
 }
 
@@ -932,7 +932,37 @@ nav ul li a {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 870px) {
+  .small::after {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .small::after {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .small::after {
+    width: 240px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .small::after {
+    width: 210px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .small::after {
+    width: 160px;
+  }
+}
+
+@media screen and (min-width:376px) and (max-width: 700px) {
   .trainer h1:after {
     width: 240px;
   }
@@ -1007,12 +1037,14 @@ nav ul li a {
   }
 
   .about-PictureSentence img {
-    max-width: 375px;
+    max-width: 100%;
+    width: 480px;
     height: 217px;
   }
 
   .about-PictureSentence2 {
     margin-top: 450px;
+    margin-bottom: 0;
   }
 
   .about-PictureDetail {
@@ -1030,14 +1062,19 @@ nav ul li a {
     height: 416px;
     padding: 30px;
     top: 200px;
-    left: 27px;
+    left: 14%;
+
   }
 
   .about-PictureSentence2 img {
-    max-width: 375px;
+    max-width: 100%;
+    width: 480px;
     height: 217px;
-    margin: 0 0 0 auto;
     z-index: -1;
+  }
+
+  .about-PictureDetail {
+    margin: 0 auto;
   }
 
   /* trainer */
@@ -1074,21 +1111,6 @@ nav ul li a {
     text-align: left;
   }
 
-  .min-button {
-    position: absolute;
-    background-color: #00B21B;
-    color: #FFFFFF;
-    font-weight: bold;
-    border-radius: 50px;
-    border: none;
-    height: 53px;
-    margin: 360px 36px 0 42px;
-    width: 280px;
-    height: 45px;
-    font-size: 13px;
-    display: block;
-  }
-
   .trainer h1 {
     font-size: 40px;
   }
@@ -1111,12 +1133,17 @@ nav ul li a {
 
   .trainer-img {
     padding-right: 0px;
-    margin-top: 15px;
+    margin: 15px auto 0;
   }
 
   .trainer-img img {
     padding-right: 0px;
     max-width: 340px;
+  }
+
+  .small::after {
+    width: 140px;
+    left: 16%;
   }
 
   /* studio */
@@ -1143,8 +1170,8 @@ nav ul li a {
   }
 
   #prevBtn {
-    top: 10%;
-    left: 94%;
+    top: 13%;
+    left: 95%;
     width: 40px;
     height: 40px;
   }
@@ -1157,8 +1184,8 @@ nav ul li a {
   }
 
   #prevBtn2 {
-    top: 10%;
-    left: -17%;
+    top: 13%;
+    left: -14%;
     width: 40px;
     height: 40px;
   }
@@ -1205,6 +1232,7 @@ nav ul li a {
 
   .counseling-img2 img {
     display: block;
+    width: 100%;
   }
 
   .counseling-button button {
@@ -1365,7 +1393,7 @@ nav ul li a {
     border-radius: 50px;
     border: none;
     height: 53px;
-    margin: 360px 36px 0 42px;
+    margin: 450px 36px 0 48px;
     width: 280px;
     height: 45px;
     font-size: 13px;
@@ -1394,12 +1422,16 @@ nav ul li a {
 
   .trainer-img {
     padding-right: 0px;
-    margin-top: 15px;
+    margin: 15px auto 0;
   }
 
   .trainer-img img {
     padding-right: 0px;
     max-width: 340px;
+  }
+
+  .small::after {
+    left: 7%;
   }
 
   /* studio */

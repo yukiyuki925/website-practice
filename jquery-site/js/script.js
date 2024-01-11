@@ -88,9 +88,25 @@ $(function () {
   w = $(window).width();
 
   function slideLeft() {
-    if (w <= 480) {
+    if (w <= 375) {
       $(".price-flex div:nth-child(" + current + ")").animate(
         { "margin-left": "-280px" },
+        500,
+        function () {
+          // アニメーションが完了したら呼び出されるコールバック関数
+          if (current === 3) {
+            // 最後の要素に達したら最初の要素に戻す
+            current = 1;
+            $(".price-flex div").css("margin-left", "0"); // 全ての要素のmarginを初期化
+          } else {
+            current++;
+          }
+        }
+      );
+    }
+    if (w <= 480) {
+      $(".price-flex div:nth-child(" + current + ")").animate(
+        { "margin-left": "-240px" },
         500,
         function () {
           // アニメーションが完了したら呼び出されるコールバック関数
