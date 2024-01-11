@@ -5,6 +5,7 @@ body {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 /* header */
@@ -58,6 +59,9 @@ header span {
 
 .header-wrapper img {
   border-radius: 0 0 0 90px;
+  max-width: 1060px;
+  height: auto;
+  position: relative;
 }
 
 .last-li {
@@ -82,8 +86,8 @@ header span {
 
 .nobody {
   position: absolute;
-  top: 659px;
-  left: 269px;
+  top: 94%;
+  left: 20%;
   font-size: 108px;
   color: #00B21B;
   font-family: Josefin Sans, Bold Italic;
@@ -128,6 +132,10 @@ header button {
   width: 370px;
   height: 89px;
   font-size: 20px;
+}
+
+.min-button {
+  display: none;
 }
 
 /* about */
@@ -209,13 +217,13 @@ header button {
 .about-PictureDetail p:nth-of-type(3) {
   width: 435px;
   height: 218px;
-  text-align: center;
+  text-align: left;
 }
 
 .about-PictureDetail2 p:nth-of-type(3) {
   width: 435px;
   height: 218px;
-  text-align: center;
+  text-align: left;
 }
 
 .training {
@@ -518,8 +526,9 @@ header button {
   border-radius: 10px;
   width: 350px;
   height: 437px;
+  min-width: 290px;
   padding: 0 2%;
-  margin: 0 15px;
+  margin: 10px 7px
 }
 
 #click-button {
@@ -568,6 +577,7 @@ header button {
 
 .price-flex {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   margin-top: 20px;
 }
@@ -786,6 +796,12 @@ nav ul li a {
     max-width: 340px;
   }
 
+  .nobody {
+    font-size: 80px;
+    top: 80%;
+  }
+
+
   .trainer img {
     max-width: 330px;
   }
@@ -812,19 +828,47 @@ nav ul li a {
 }
 
 @media screen and (max-width: 1175px) {
+
+  .nobody {
+    font-size: 80px;
+    top: 96%;
+  }
+
   header nav {
     display: none;
   }
 
-  /* .header-wrapper img {
-    width: 90%;
-  } */
+  .header-wrapper img {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .nobody {
+    top: 90%;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .trainer-img-wrapper {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .nobody {
+    top: 85%;
+  }
 }
 
 @media screen and (max-width: 959px) {
   header {
     max-width: 900px;
     width: 100%;
+  }
+
+  header h1 {
+    font-size: 35px;
   }
 
   .header-MainSentence {
@@ -835,12 +879,24 @@ nav ul li a {
     font-size: 13px;
   }
 
+  .nobody {
+    font-size: 70px;
+    top: 86%;
+  }
+
   header button {
-    width: 320px;
+    width: 300px;
+    height: 70px;
+    font-size: 16px;
+  }
+
+  .header-wrapper img {
+    height: 600px;
+    width: 95%;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 375px) {
 
   /* header */
   header {
@@ -980,6 +1036,7 @@ nav ul li a {
     width: 280px;
     height: 45px;
     font-size: 13px;
+    display: block;
   }
 
   .trainer h1 {
