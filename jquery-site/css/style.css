@@ -715,6 +715,7 @@ footer h1 {
   font-size: 40px;
   text-align: center;
   margin-bottom: 30px;
+  position: relative;
 }
 
 footer span {
@@ -734,6 +735,7 @@ footer span {
 nav ul {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 nav ul li {
@@ -748,12 +750,12 @@ nav ul li a {
 
 .top-button {
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   background-color: #FFFFFF;
   border-radius: 50%;
-  right: 2px;
-  bottom: 10%;
+  border: none;
+  right: -22%;
 }
 
 .top-button::before {
@@ -765,8 +767,9 @@ nav ul li a {
   border-right: solid 3px #00B21B;
   position: absolute;
   top: 43%;
-  left: 41%;
+  left: 37%;
   transform: rotate(-45deg);
+  z-index: 10;
 }
 
 /* jquery */

@@ -124,3 +124,16 @@ $(function () {
   // 3秒ごとにslideLeft関数を実行
   setInterval(slideLeft, 3000);
 });
+
+// topに戻るボタン
+$(function () {
+  $(".top-button").on("click", function () {
+    $("body,html").animate(
+      {
+        scrollTop: 0, //上から0pxの位置に戻る
+      },
+      800
+    );
+    return false;
+  });
+});
