@@ -726,6 +726,10 @@ footer span {
   padding: 50px 0;
 }
 
+.footer-flex {
+  max-width: 1400px;
+  margin: 40px auto 0;
+}
 
 nav ul {
   display: flex;
@@ -740,6 +744,29 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #FFFFFF;
+}
+
+.top-button {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  right: 2px;
+  bottom: 10%;
+}
+
+.top-button::before {
+  content: '';
+  width: 17px;
+  height: 17px;
+  border: 0;
+  border-top: solid 3px #00B21B;
+  border-right: solid 3px #00B21B;
+  position: absolute;
+  top: 43%;
+  left: 41%;
+  transform: rotate(-45deg);
 }
 
 /* jquery */
@@ -862,16 +889,6 @@ nav ul li a {
 }
 
 @media screen and (max-width: 990px) {
-  .nobody {
-    top: 85%;
-  }
-
-  .small::after {
-    width: 430px;
-  }
-}
-
-@media screen and (max-width: 990px) {
   .trainer h1:after {
     width: 340px;
   }
@@ -887,11 +904,17 @@ nav ul li a {
   #prevBtn2 {
     top: 25%;
   }
-}
 
-@media screen and (max-width: 990px) {
   #button {
     margin-top: 500px;
+  }
+
+  .nobody {
+    top: 85%;
+  }
+
+  .small::after {
+    width: 430px;
   }
 
   .studio {
