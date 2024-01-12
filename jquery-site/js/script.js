@@ -103,8 +103,7 @@ $(function () {
           }
         }
       );
-    }
-    if (w <= 480) {
+    } else if (w > 375 && w <= 500) {
       $(".price-flex div:nth-child(" + current + ")").animate(
         { "margin-left": "-240px" },
         500,
