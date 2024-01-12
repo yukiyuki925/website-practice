@@ -335,6 +335,7 @@ header button {
   display: flex;
   max-width: 1110px;
   margin: 40px auto 0;
+  flex-wrap: wrap;
 }
 
 .trainer-img {
@@ -584,7 +585,7 @@ header button {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin-top: 20px;
+  margin: 20px auto 0;
 }
 
 /* FAQ */
@@ -796,19 +797,27 @@ nav ul li a {
   }
 }
 
-@media screen and (max-width: 1100px) {
-  .trainer-img {
-    max-width: 340px;
+@media screen and (max-width: 1175px) {
+
+  .nobody {
+    font-size: 80px;
+    top: 96%;
   }
+
+  header nav {
+    display: none;
+  }
+
+  .header-wrapper img {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
 
   .nobody {
     font-size: 80px;
     top: 80%;
-  }
-
-
-  .trainer img {
-    max-width: 330px;
   }
 
   .staff p {
@@ -825,22 +834,6 @@ nav ul li a {
 
   header button {
     width: 340px;
-  }
-}
-
-@media screen and (max-width: 1175px) {
-
-  .nobody {
-    font-size: 80px;
-    top: 96%;
-  }
-
-  header nav {
-    display: none;
-  }
-
-  .header-wrapper img {
-    width: 95%;
   }
 }
 
@@ -875,6 +868,34 @@ nav ul li a {
 
   .small::after {
     width: 430px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .trainer h1:after {
+    width: 340px;
+  }
+
+  .about {
+    margin: 30px auto 20px;
+  }
+
+  #prevBtn {
+    top: 25%;
+  }
+
+  #prevBtn2 {
+    top: 25%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #button {
+    margin-top: 500px;
+  }
+
+  .studio {
+    height: 800px;
   }
 }
 
@@ -917,34 +938,6 @@ nav ul li a {
   }
 }
 
-@media screen and (max-width: 990px) {
-  .trainer h1:after {
-    width: 340px;
-  }
-
-  .about {
-    margin: 30px auto 20px;
-  }
-
-  #prevBtn {
-    top: 25%;
-  }
-
-  #prevBtn2 {
-    top: 25%;
-  }
-}
-
-@media screen and (max-width: 990px) {
-  #button {
-    margin-top: 500px;
-  }
-
-  .studio {
-    height: 800px;
-  }
-}
-
 @media screen and (max-width: 870px) {
   .small::after {
     width: 400px;
@@ -954,6 +947,36 @@ nav ul li a {
 @media screen and (max-width: 730px) {
   .small::after {
     width: 300px;
+  }
+}
+
+@media (min-width:1092px) and (max-width: 1139px) {
+  .trainer-img-wrapper {
+    width: 745px;
+    max-width: 100%;
+    margin: 40px auto 0;
+  }
+
+  .trainer-img {
+    margin-top: 15px;
+  }
+}
+
+@media (min-width:901px) and (max-width: 1091px) {
+  .trainer-img-wrapper {
+    width: 745px;
+    max-width: 100%;
+    margin: 40px auto 0;
+  }
+
+  .trainer-img {
+    margin-top: 15px;
+  }
+
+  .price-flex {
+    width: 745px;
+    max-width: 100%;
+    margin: 40px auto 0;
   }
 }
 
@@ -1211,8 +1234,6 @@ nav ul li a {
     height: 330px;
   }
 }
-
-
 
 @media (min-width: 376px) and (max-width: 500px) {
 
