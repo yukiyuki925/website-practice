@@ -957,19 +957,42 @@ nav ul li a {
   }
 }
 
-@media screen and (max-width: 660px) {
-  .small::after {
-    width: 240px;
+@media (min-width: 728px) and (max-width: 900px) {
+
+  #prevBtn {
+    width: 65px;
+    height: 65px;
+    top: 26%;
+    left: 95%;
+  }
+
+  #prevBtn::before {
+    width: 14px;
+    height: 14px;
+  }
+
+  #prevBtn2::before {
+    width: 14px;
+    height: 14px;
+  }
+
+  #prevBtn2 {
+    width: 65px;
+    height: 65px;
+    top: 27%;
+    left: -12%;
+  }
+
+  .trainer-img {
+    margin: 30px auto;
+  }
+
+  .flex-box {
+    margin: 20px auto 7px;
   }
 }
 
-@media screen and (max-width: 660px) {
-  .small::after {
-    width: 210px;
-  }
-}
-
-@media (min-width: 501px) and (max-width: 709px) {
+@media (min-width: 601px) and (max-width: 727px) {
 
   /* header */
   .nobody {
@@ -1045,7 +1068,147 @@ nav ul li a {
   }
 
   #button {
-    margin-top: 400px;
+    margin-top: 380px;
+  }
+
+  #prevBtn {
+    width: 59px;
+    height: 59px;
+    top: 19%;
+    left: 95%;
+  }
+
+  #prevBtn::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+  }
+
+  #prevBtn2 {
+    width: 59px;
+    height: 59px;
+    top: 20%;
+    left: -14%;
+  }
+
+  #prevBtn2::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+  }
+
+  .flex-box {
+    margin: 10px auto 7px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 600px) {
+
+  /* header */
+  .nobody {
+    font-size: 65px;
+    top: 92%;
+    left: 65%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+  }
+
+  .header-wrapper img {
+    object-fit: cover;
+    width: 83%;
+  }
+
+  .header-sentence {
+    left: 10%;
+  }
+
+  /* about */
+
+  .about {
+    height: 1900px;
+  }
+
+  .about-PictureDetail {
+    position: absolute;
+    width: 480px;
+    top: 540px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .about-PictureDetail p:nth-of-type(3) {
+    width: 382px;
+    height: 218px;
+    text-align: left;
+  }
+
+  .about-PictureDetail2 p:nth-of-type(3) {
+    width: 378px;
+    height: 218px;
+    text-align: left;
+  }
+
+  .about-PictureSentence img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about-PictureSentence2 {
+    margin-top: 260px;
+  }
+
+  .about-PictureDetail2 {
+    position: absolute;
+    width: 480px;
+    top: 540px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .studio {
+    height: 600px;
+  }
+
+  .trainer-img {
+    margin: 15px auto;
+  }
+
+  #prevBtn2 {
+    width: 59px;
+    height: 59px;
+    top: 15%;
+    left: -16%;
+  }
+
+  #prevBtn2::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+  }
+
+  #prevBtn {
+    width: 59px;
+    height: 59px;
+    top: 15%;
+    left: 95%;
+  }
+
+  #prevBtn::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+  }
+
+  #button {
+    margin-top: 280px;
+  }
+
+  .flex-box {
+    margin: 10px auto 7px;
+  }
+
+  .counseling-img1 img {
+    height: 330px;
   }
 }
 
