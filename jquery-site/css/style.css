@@ -873,6 +873,10 @@ nav ul li a {
   #prevBtn2 {
     top: 30%;
   }
+
+  .top-button {
+    right: -18%;
+  }
 }
 
 @media screen and (max-width: 1030px) {
@@ -920,6 +924,7 @@ nav ul li a {
 }
 
 @media screen and (max-width: 959px) {
+
   header {
     max-width: 900px;
     width: 100%;
@@ -942,6 +947,10 @@ nav ul li a {
     top: 86%;
   }
 
+  .top-button {
+    right: -15%;
+  }
+
   header button {
     width: 300px;
     height: 70px;
@@ -961,6 +970,24 @@ nav ul li a {
 @media screen and (max-width: 870px) {
   .small::after {
     width: 400px;
+  }
+
+  .top-button {
+    right: -12%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  footer h1 {
+    margin: 0;
+  }
+
+  .footer-flex {
+    margin: 0 auto;
+  }
+
+  .top-button {
+    right: -30%;
   }
 }
 
@@ -1166,6 +1193,10 @@ nav ul li a {
   .flex-box {
     margin: 10px auto 7px;
   }
+
+  nav ul li {
+    display: none;
+  }
 }
 
 @media (min-width: 501px) and (max-width: 600px) {
@@ -1275,6 +1306,10 @@ nav ul li a {
 
   .counseling-img1 img {
     height: 330px;
+  }
+
+  nav ul li {
+    display: none;
   }
 }
 
@@ -1552,7 +1587,7 @@ nav ul li a {
     margin-top: 30px;
   }
 
-  nav ul {
+  nav ul li {
     display: none;
   }
 
@@ -1834,7 +1869,7 @@ nav ul li a {
     margin-top: 30px;
   }
 
-  nav ul {
+  nav ul li {
     display: none;
   }
 
