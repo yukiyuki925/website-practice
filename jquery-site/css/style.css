@@ -1321,7 +1321,7 @@ nav ul li a {
 
   .header-wrapper img {
     object-fit: cover;
-    width: 83%;
+    width: 73%;
   }
 
   .header-sentence {
@@ -1443,7 +1443,7 @@ nav ul li a {
   }
 
   .header-wrapper img {
-    width: 90%;
+    width: 75%;
     height: 410px;
     object-fit: cover;
   }
@@ -1582,6 +1582,7 @@ nav ul li a {
   .trainer-img {
     padding-right: 0px;
     margin: 15px auto 0;
+    max-width: 340px;
   }
 
   .trainer-img img {
