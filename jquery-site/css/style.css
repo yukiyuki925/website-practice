@@ -989,6 +989,10 @@ nav ul li a {
   .top-button {
     right: -30%;
   }
+
+  footer nav ul li {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 730px) {
@@ -1194,7 +1198,7 @@ nav ul li a {
     margin: 10px auto 7px;
   }
 
-  nav ul li {
+  footer nav ul li {
     display: none;
   }
 }
@@ -1308,7 +1312,7 @@ nav ul li a {
     height: 330px;
   }
 
-  nav ul li {
+  footer nav ul li {
     display: none;
   }
 }
@@ -1587,7 +1591,7 @@ nav ul li a {
     margin-top: 30px;
   }
 
-  nav ul li {
+  footer nav ul li {
     display: none;
   }
 
@@ -1869,7 +1873,7 @@ nav ul li a {
     margin-top: 30px;
   }
 
-  nav ul li {
+  footer nav ul li {
     display: none;
   }
 
