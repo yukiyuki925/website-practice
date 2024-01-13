@@ -137,3 +137,18 @@ $(function () {
     return false;
   });
 });
+
+// トグルメニュー
+$(function () {
+  let count = 1;
+  $(".openbtn").on("click", function () {
+    $(this).toggleClass("active");
+    count++;
+    $(".btnli").slideToggle(300);
+    if (count % 2 === 0) {
+      $(".openbtn span").css("background", "#FFFFFF");
+    } else {
+      $(".openbtn span").css("background", "#00B21B");
+    }
+  });
+});
