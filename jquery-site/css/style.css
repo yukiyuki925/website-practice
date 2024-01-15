@@ -685,7 +685,23 @@ header button {
   width: 350px;
   max-width: 100%;
   min-width: 290px;
-  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#second-price {
+  width: 256px;
+  height: 43px;
+  margin: -18px auto 0;
+  font-size: 20px;
+  color: #00B21B;
+  background-color: #FFFFFF;
+  border: 2px solid #111111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 70px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
 }
 
 #click-button {
@@ -703,6 +719,10 @@ header button {
     'Hiragino Kaku Gothic',
     sans-serif;
   font-weight: 600;
+}
+
+.title-detail-top {
+  margin-top: 25px;
 }
 
 .price-sub {

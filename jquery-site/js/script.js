@@ -175,7 +175,7 @@ $(function () {
 // trainerとstaffを切り替え
 $(function () {
   $(".trainer-img-wrapper").show();
-  $(".trainer-img-staff").hide();
+  $(".staff-img-wrapper").hide();
   $(".trainer-trainer").on("click", function () {
     $(".small").removeClass("hover");
     $(".trainer-img-wrapper").show();
