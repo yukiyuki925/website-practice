@@ -154,18 +154,39 @@ $(function () {
 });
 
 // mv切り替え
-function mvSlider() {
-  // 現在表示されている画像のインデックスを取得
-  let current = $(".header-wrapper img:visible").index();
-  // 次の画像のインデックスを計算
-  let next = (current + 1) % $(".header-wrapper img").length;
-  // 現在の画像を非表示にし、次の画像を表示する
-  $(".header-wrapper img").eq(current).fadeOut();
-  $(".header-wrapper img").eq(next).fadeIn();
-}
+$(function () {
+  function mvSlider() {
+    // 現在表示されている画像のインデックスを取得
+    let current = $(".header-wrapper img:visible").index();
+    // 次の画像のインデックスを計算
+    let next = (current + 1) % $(".header-wrapper img").length;
+    // 現在の画像を非表示にし、次の画像を表示する
+    $(".header-wrapper img").eq(current).fadeOut();
+    $(".header-wrapper img").eq(next).fadeIn();
+  }
 
-// 初回実行
-mvSlider();
+  // 初回実行
+  mvSlider();
 
-// 3秒ごとに autoImageSlider 関数を実行
-setInterval(mvSlider, 3000);
+  // 3秒ごとに autoImageSlider 関数を実行
+  setInterval(mvSlider, 3000);
+});
+
+// trainerとstaffを切り替え
+$(function () {
+  $(".trainer-img-wrapper").show();
+  $(".trainer-img-staff").hide();
+  $(".trainer-trainer").on("click", function () {
+    $(".small").removeClass("hover");
+    $(".trainer-img-wrapper").show();
+    // スタッフ画像を非表示
+    $(".staff-img-wrapper").hide();
+  });
+
+  $(".trainer-staff").on("click", function () {
+    $(".small").addClass("hover");
+    $(".staff-img-wrapper").show();
+    // スタッフ画像を非表示
+    $(".trainer-img-wrapper").hide();
+  });
+});
